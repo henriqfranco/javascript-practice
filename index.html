@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <svg class="menuButton" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <path
+                d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z">
+            </path>
+        </svg>
+        <nav class="navHorizontal">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">INFO</a></li>
+                <li><a href="#">RESOURCES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="navVertical">
+        <ul class="verticalList">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">INFO</a></li>
+            <li><a href="#">RESOURCES</a></li>
+        </ul>
+    </nav>
+
+    <section class="images">
+        <div class="buttons">
+            <button onclick="firstImage()">IMAGE 1</button>
+            <button onclick="secondImage()">IMAGE 2</button>
+            <button onclick="thirdImage()">IMAGE 3</button>
+        </div>
+        <div id="showImages"></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
